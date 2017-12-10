@@ -15,4 +15,5 @@ Pod::Spec.new do |s|
   s.resource            = 'Instabug.framework/Instabug.bundle'
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Instabug/"' }
   s.requires_arc = true
+  s.prepare_command = 'InsertUploadDSYM.rb'
 end
